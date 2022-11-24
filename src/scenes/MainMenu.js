@@ -1,7 +1,6 @@
 import Phaser from "phaser";
 
 let playButton;
-let background;
 
 class MainMenu extends Phaser.Scene {
     constructor(test) {
