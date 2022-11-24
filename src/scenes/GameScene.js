@@ -1,10 +1,16 @@
 import Phaser from "phaser";
 let background;
 let slime;
+<<<<<<< Updated upstream
 let keyW;
 let keyA;
 let keyS;
 let keyD;
+=======
+let platforms;
+let heart;
+let powerup;
+>>>>>>> Stashed changes
 class GameScene extends Phaser.Scene {
     constructor(test) {
         super({
@@ -13,9 +19,15 @@ class GameScene extends Phaser.Scene {
     }
 
     preload() {
+<<<<<<< Updated upstream
         this.load.image('bg', '/src/GameScene/4.png');
         this.load.spritesheet('slime', '/src/GameScene/spritesheet.png',
             { frameWidth: 317.4, frameHeight: 254 });
+=======
+        this.load.image('bg','/src/GameScene/scene1.png');
+        this.load.image('platform','/src/GameScene/grassfloor.png');
+        this.load.image('hp','/src/GameScene/')
+>>>>>>> Stashed changes
     }
     create() {
         background = this.add.image(800, 500, 'bg');
@@ -51,10 +63,14 @@ class GameScene extends Phaser.Scene {
             repeat: -1
         })
 
+<<<<<<< Updated upstream
         keyA = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.A)
         keyD = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.D)
         // keyW = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.W)
         slime.setCollideWorldBounds(true)
+=======
+
+>>>>>>> Stashed changes
     }
 
     update(delta, time) {
