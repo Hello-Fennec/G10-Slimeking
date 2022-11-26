@@ -137,6 +137,7 @@ class story extends Phaser.Scene {
             else{
                 this.scene.start("GameScene");
                 storySound.stop();
+                i=1;
             }
         })
         

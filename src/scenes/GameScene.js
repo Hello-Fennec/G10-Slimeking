@@ -341,6 +341,9 @@ class GameScene extends Phaser.Scene {
             music.stop();
             this.scene.start("GameOver")
             hp =3;
+            keyA.reset();
+            keyD.reset();
+            keyW.reset()
         }
         if(starCount == 25){
             music.stop();
