@@ -1,7 +1,7 @@
 import Phaser from "phaser";
 let background;
 let next;
-let i = 2;
+let i = 1;
 let slime;
 let platform;
 let keyW;
@@ -29,6 +29,7 @@ class story extends Phaser.Scene {
         this.load.image('t6', 'src/GameScene/text6.png');
         this.load.image('t7', 'src/GameScene/text7.png');
         this.load.image('t8', 'src/GameScene/text8.png');
+        this.load.image('click','src/GameScene/click.png')
         this.load.spritesheet('slime', '/src/GameScene/spritesheet.png',
             { frameWidth: 317, frameHeight: 254 });
         this.load.image('floor', 'src/GameScene/floor.png')
@@ -90,7 +91,7 @@ class story extends Phaser.Scene {
             duration: 1000,
             repeat: -1
         })
-        this.add.image(350, 880, 't1');
+        this.add.image(300, 950, 'click');
         v1.play();
         this.input.on("pointerdown", () => {
             if (i <= 8) {
@@ -146,7 +147,7 @@ class story extends Phaser.Scene {
                 keyA.reset();
                 keyD.reset();
                 keyW.reset()
-                i = 2;
+                i = 1;
             }
         })
 
