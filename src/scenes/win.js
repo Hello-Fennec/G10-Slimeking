@@ -35,7 +35,7 @@ class win extends Phaser.Scene {
         //theOtherScene = this.scene.get('GameOver');
         Button.setInteractive()
         Button.on("pointerdown", () => {
-            this.scene.start("GameScene")
+            this.scene.start("MainMenu")
             victory.stop()
         })
     }
