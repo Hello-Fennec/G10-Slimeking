@@ -92,7 +92,7 @@ class story extends Phaser.Scene {
             repeat: -1
         })
         this.add.image(300, 950, 'click');
-        v1.play();
+        //v1.play();
         this.input.on("pointerdown", () => {
             if (i <= 8) {
                 next = this.add.image(350, 880, 't' + i);
